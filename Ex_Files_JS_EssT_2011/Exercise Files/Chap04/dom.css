@@ -1,0 +1,22 @@
+html {
+	background:tan;
+}
+
+#firstList{
+	float:left;
+	padding:20px;
+	border: 2px solid black;
+}
+#list {
+	float:right;
+	padding:20px;
+	border: 2px solid black;
+}
+
+h1 {
+	text-align: center;
+	margin:0 auto;
+	padding:10px;
+	border: 2px solid black;
+}
+
