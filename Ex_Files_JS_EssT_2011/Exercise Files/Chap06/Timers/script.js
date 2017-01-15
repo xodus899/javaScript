@@ -5,12 +5,14 @@ function simpleMessage() {
 }
 
 // settimeout is in milliseconds
+setTimeout(simpleMessage,10000);
 
-var myImage = document.getElementById("mainImage");
 
-var imageArray = ["_images/overlook.jpg","_images/winery_sign.jpg","_images/lunch.jpg",
+let myImage = document.getElementById("mainImage");
+
+let imageArray = ["_images/overlook.jpg","_images/winery_sign.jpg","_images/lunch.jpg",
 				  "_images/bigSur.jpg","_images/flag_photo.jpg","_images/mission_look.jpg"];
-var imageIndex = 0;
+let imageIndex = 0;
 
 function changeImage() {
 	myImage.setAttribute("src",imageArray[imageIndex]);
@@ -21,4 +23,8 @@ function changeImage() {
 }
 
 // setInterval is also in milliseconds
-//setInterval(changeImage,5000);
+let intervalHandle = setInterval(changeImage,3000);
+
+myImage.onclick = function() {
+	clearInterval(intervalHandle);
+}
