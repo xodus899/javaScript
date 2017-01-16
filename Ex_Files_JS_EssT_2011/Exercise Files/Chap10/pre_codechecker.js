@@ -1,18 +1,13 @@
+"use strict";
 // This is some JavaScript to run through a code checker
 
 // create some variables
-var currentPos = 0;
-var intervalHandle;
+let currentPos = 0;
+let intervalHandle;
 
-// here's where we jump the box out of the current place in the page.
-function beginAnimate() {
-    document.getElementById("join").style.position = "absolute";
-    document.getElementById("join").style.left = "0px";
-    document.getElementById("join").style.top = "100px";
-intervalHandle = setInterval(animateBox,50);
-}
 
 function animateBox() {
+    let something;
     // set new position
     currentPos+=5;
     document.getElementById("join").style.left = currentPos + "px";
@@ -24,10 +19,18 @@ function animateBox() {
         document.getElementById("join").style.position = "";
         document.getElementById("join").style.left = "";
         document.getElementById("join").style.top = "";
-	// whoops! i didn't declare this variable using var
+    // whoops! i didn't declare this variable using var
         something = something + 1;
     }
 }
+// here's where we jump the box out of the current place in the page.
+function beginAnimate() {
+    document.getElementById("join").style.position = "absolute";
+    document.getElementById("join").style.left = "0px";
+    document.getElementById("join").style.top = "100px";
+intervalHandle = setInterval(animateBox,50);
+}
+
 
 // when page has finished loading, wait 5 seconds then
 // call the beginAnimate function

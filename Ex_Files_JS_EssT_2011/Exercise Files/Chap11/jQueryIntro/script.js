@@ -5,7 +5,7 @@ document.getElementById("mainArticle").className = "highlight";
 //jQuery("#mainArticle").addClass("highlight");
 
 // find all elements with a particular class
-//jQuery(".tourDescription").addClass("highlight");
+jQuery(".tourDescription").addClass("highlight");
 
 // find all elements with a particular tag
 //jQuery("li").addClass("highlight");
@@ -27,7 +27,7 @@ document.getElementById("mainArticle").className = "highlight";
 
 // simple click
 //$("#pageID").click(function() {
-//   $("#pageID").text("You clicked me!");
+   //$("#pageID").text("You clicked me!");
 //});
 
 // add $(this) to refer to current element
@@ -42,7 +42,7 @@ document.getElementById("mainArticle").className = "highlight";
 
 // Page load events - instead of window.onload()
 //$(document).ready(function () {
-//  $("#pageID").text("The DOM is fully loaded.");
+  //$("#pageID").text("The DOM is fully loaded.");
 //});
 
 // you don't have to worry about accidentally calling it multiple times.
