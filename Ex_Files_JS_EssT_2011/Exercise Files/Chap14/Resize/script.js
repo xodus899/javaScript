@@ -16,7 +16,7 @@ function adjustStyle() {
     }
 }
 
-// now call it when the window is resized.
+// now call it when the window is resized =D.
 window.onresize = function () {
     adjustStyle();
 };

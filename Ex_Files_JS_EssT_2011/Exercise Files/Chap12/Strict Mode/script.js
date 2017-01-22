@@ -1,19 +1,14 @@
-"use strict";
+
 // didn't use var
-let foo = "Hello world";
+foo = "Hello world";
 
 // new object with two properties with the same name
-function object() {
-let myObject = { samename: 1, differentName: 2 };
-    return myObject;
-}
-object();
+var myObject = { samename: 1, samename: 2 };
 
 // function with the same name for multiple parameters
-function myFunction( a,b,c) {
+function myFunction( a,b,a) {
    return a + b + c;
 }
-console.log(myFunction(1,2,3));
 
 document.getElementById("mainContent").innerHTML = foo;
 
